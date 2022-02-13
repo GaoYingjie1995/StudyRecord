@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS | 空指针灬异常</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="学习之路">
+    
+    <link rel="preload" href="/StudyRecord/assets/css/0.styles.f8b596a9.css" as="style"><link rel="preload" href="/StudyRecord/assets/js/app.c1a100e1.js" as="script"><link rel="preload" href="/StudyRecord/assets/js/2.711b5d2d.js" as="script"><link rel="preload" href="/StudyRecord/assets/js/14.40c5f524.js" as="script"><link rel="prefetch" href="/StudyRecord/assets/js/10.b83bebe1.js"><link rel="prefetch" href="/StudyRecord/assets/js/11.512f05a2.js"><link rel="prefetch" href="/StudyRecord/assets/js/12.61aac186.js"><link rel="prefetch" href="/StudyRecord/assets/js/13.105d6e1b.js"><link rel="prefetch" href="/StudyRecord/assets/js/15.bbb0263d.js"><link rel="prefetch" href="/StudyRecord/assets/js/16.2a390bfc.js"><link rel="prefetch" href="/StudyRecord/assets/js/17.e5341834.js"><link rel="prefetch" href="/StudyRecord/assets/js/3.546ba140.js"><link rel="prefetch" href="/StudyRecord/assets/js/4.b7d0708f.js"><link rel="prefetch" href="/StudyRecord/assets/js/5.9e2f4ca7.js"><link rel="prefetch" href="/StudyRecord/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/StudyRecord/assets/js/7.4e12879e.js"><link rel="prefetch" href="/StudyRecord/assets/js/8.1e324f54.js"><link rel="prefetch" href="/StudyRecord/assets/js/9.39ffd6f8.js">
+    <link rel="stylesheet" href="/StudyRecord/assets/css/0.styles.f8b596a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/StudyRecord/" class="home-link router-link-active"><!----> <span class="site-name">空指针灬异常</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android Menu" class="dropdown-title"><span class="title">Android</span> <span class="arrow down"></span></button> <button type="button" aria-label="Android Menu" class="mobile-dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/" class="nav-link">
+  Jetpack
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidView.html" class="nav-link">
+  Android常用控件
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/Dependency.html" class="nav-link">
+  Android常用依赖
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="nav-link">
+  Android开源库
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/ErrorCollection.html" class="nav-link">
+  Android错误收集
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/network.html" class="nav-link">
+  Android Network
+</a></li></ul></div></div><div class="nav-item"><a href="/StudyRecord/guide/js/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/VuePress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/Yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android Menu" class="dropdown-title"><span class="title">Android</span> <span class="arrow down"></span></button> <button type="button" aria-label="Android Menu" class="mobile-dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/" class="nav-link">
+  Jetpack
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidView.html" class="nav-link">
+  Android常用控件
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/Dependency.html" class="nav-link">
+  Android常用依赖
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="nav-link">
+  Android开源库
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/ErrorCollection.html" class="nav-link">
+  Android错误收集
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/network.html" class="nav-link">
+  Android Network
+</a></li></ul></div></div><div class="nav-item"><a href="/StudyRecord/guide/js/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/VuePress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/Yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JS</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/StudyRecord/guide/js/" aria-current="page" class="active sidebar-link">JS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/StudyRecord/guide/js/#js" class="sidebar-link">JS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/StudyRecord/guide/js/#javascript" class="sidebar-link">javascript</a></li></ul></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="js"><a href="#js" class="header-anchor">#</a> JS</h2> <h3 id="javascript"><a href="#javascript" class="header-anchor">#</a> javascript</h3></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/StudyRecord/assets/js/app.c1a100e1.js" defer></script><script src="/StudyRecord/assets/js/2.711b5d2d.js" defer></script><script src="/StudyRecord/assets/js/14.40c5f524.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+
+# vscode编辑器配置文件
+.vscode/
+
+.DS_Store
+
+node_modules
+
+.idea
+
+.temp
+
+.secrets.js

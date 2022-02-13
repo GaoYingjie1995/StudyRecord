@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Android 常用依赖 | 空指针灬异常</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="学习之路">
+    
+    <link rel="preload" href="/StudyRecord/assets/css/0.styles.f8b596a9.css" as="style"><link rel="preload" href="/StudyRecord/assets/js/app.c1a100e1.js" as="script"><link rel="preload" href="/StudyRecord/assets/js/2.711b5d2d.js" as="script"><link rel="preload" href="/StudyRecord/assets/js/10.b83bebe1.js" as="script"><link rel="prefetch" href="/StudyRecord/assets/js/11.512f05a2.js"><link rel="prefetch" href="/StudyRecord/assets/js/12.61aac186.js"><link rel="prefetch" href="/StudyRecord/assets/js/13.105d6e1b.js"><link rel="prefetch" href="/StudyRecord/assets/js/14.40c5f524.js"><link rel="prefetch" href="/StudyRecord/assets/js/15.bbb0263d.js"><link rel="prefetch" href="/StudyRecord/assets/js/16.2a390bfc.js"><link rel="prefetch" href="/StudyRecord/assets/js/17.e5341834.js"><link rel="prefetch" href="/StudyRecord/assets/js/3.546ba140.js"><link rel="prefetch" href="/StudyRecord/assets/js/4.b7d0708f.js"><link rel="prefetch" href="/StudyRecord/assets/js/5.9e2f4ca7.js"><link rel="prefetch" href="/StudyRecord/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/StudyRecord/assets/js/7.4e12879e.js"><link rel="prefetch" href="/StudyRecord/assets/js/8.1e324f54.js"><link rel="prefetch" href="/StudyRecord/assets/js/9.39ffd6f8.js">
+    <link rel="stylesheet" href="/StudyRecord/assets/css/0.styles.f8b596a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/StudyRecord/" class="home-link router-link-active"><!----> <span class="site-name">空指针灬异常</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android Menu" class="dropdown-title"><span class="title">Android</span> <span class="arrow down"></span></button> <button type="button" aria-label="Android Menu" class="mobile-dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/" class="nav-link router-link-active">
+  Jetpack
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidView.html" class="nav-link">
+  Android常用控件
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/Dependency.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Android常用依赖
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="nav-link">
+  Android开源库
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/ErrorCollection.html" class="nav-link">
+  Android错误收集
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/network.html" class="nav-link">
+  Android Network
+</a></li></ul></div></div><div class="nav-item"><a href="/StudyRecord/guide/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/VuePress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/Yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android Menu" class="dropdown-title"><span class="title">Android</span> <span class="arrow down"></span></button> <button type="button" aria-label="Android Menu" class="mobile-dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/" class="nav-link router-link-active">
+  Jetpack
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidView.html" class="nav-link">
+  Android常用控件
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/Dependency.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Android常用依赖
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="nav-link">
+  Android开源库
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/ErrorCollection.html" class="nav-link">
+  Android错误收集
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/network.html" class="nav-link">
+  Android Network
+</a></li></ul></div></div><div class="nav-item"><a href="/StudyRecord/guide/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/VuePress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/Yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Android</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/StudyRecord/guide/android/" aria-current="page" class="sidebar-link">JetPack</a></li><li><a href="/StudyRecord/guide/android/AndroidView.html" class="sidebar-link">Android常用控件</a></li><li><a href="/StudyRecord/guide/android/Dependency.html" aria-current="page" class="active sidebar-link">Android 常用依赖</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/StudyRecord/guide/android/Dependency.html#gradle的依赖引入方式" class="sidebar-link">Gradle的依赖引入方式</a></li><li class="sidebar-sub-header"><a href="/StudyRecord/guide/android/Dependency.html#网络" class="sidebar-link">网络</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/StudyRecord/guide/android/Dependency.html#okhttp" class="sidebar-link">OkHttp</a></li><li class="sidebar-sub-header"><a href="/StudyRecord/guide/android/Dependency.html#retrofit" class="sidebar-link">Retrofit</a></li></ul></li></ul></li><li><a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="sidebar-link">Android 开源项目</a></li><li><a href="/StudyRecord/guide/android/ErrorCollection.html" class="sidebar-link">Android 异常收集</a></li><li><a href="/StudyRecord/guide/android/network.html" class="sidebar-link">Android 网络库</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="android-常用依赖"><a href="#android-常用依赖" class="header-anchor">#</a> Android 常用依赖</h1> <h2 id="gradle的依赖引入方式"><a href="#gradle的依赖引入方式" class="header-anchor">#</a> Gradle的依赖引入方式</h2> <p>Gradle 新老版本关键字</p> <table><thead><tr><th>4.x+版本配置</th> <th>已弃用配置</th></tr></thead> <tbody><tr><td>api</td> <td>compile</td></tr> <tr><td>implementation</td> <td>compile</td></tr> <tr><td>compileOnly</td> <td>provided</td></tr> <tr><td>runtimeOnly</td> <td>apk</td></tr> <tr><td>testImplementation</td> <td>testCompile</td></tr> <tr><td>androidTestImplementation</td> <td>androidTestCompile</td></tr> <tr><td>debugImplementation</td> <td>debugCompile</td></tr> <tr><td>releaseImplementation</td> <td>releaseCompile</td></tr></tbody></table> <ul><li><strong>api</strong></li></ul> <blockquote><p>与compile对应，功能完全一样，会添加依赖到编译路径，并且会将依赖打包到输出（aar或apk），与implementation不同，这个依赖可以传递，其他module无论在编译时和运行时都可以访问这个依赖的实现，也就是会泄漏一些不应该不使用的实现。举个例子，A依赖B，B依赖C，如果都是使用api配置的话，A可以直接使用C中的类（编译时和运行时），而如果是使用implementation配置的话，在编译时，A是无法访问C中的类的。</p></blockquote> <ul><li><strong>implementation</strong></li></ul> <blockquote><p>与compile对应，会添加依赖到编译路径，并且会将依赖打包到输出（aar或apk），但是<strong>在编译时不会将依赖的实现暴露给其他module</strong>，也就是只有在运行时其他module才能访问这个依赖中的实现;</p></blockquote> <blockquote><p>简单的说，就是使用implementation指令的依赖不会传递;</p></blockquote> <blockquote><p>使用这个配置，可以显著提升构建时间，因为它可以减少重新编译的module的数量。Google建议尽量使用这个依赖配置;</p></blockquote> <ul><li><strong>compileOnly</strong></li></ul> <blockquote><p>与provided对应，Gradle把依赖加到编译路径，编译时使用，不会打包到输出（aar或apk）。这可以减少输出的体积，在只在编译时需要，在运行时可选的情况，很有用</p></blockquote> <ul><li><strong>apk</strong></li></ul> <blockquote><p>只在生成apk的时候参与打包，编译时不会参与，很少用。</p></blockquote> <ul><li><strong>testImplementation</strong></li></ul> <blockquote><p>只在单元测试代码的编译以及最终打包测试apk时有效。</p></blockquote> <ul><li><strong>androidTestImplementation</strong></li></ul> <blockquote><p>只在Android相关单元测试代码的编译以及最终打包测试apk时有效。</p></blockquote> <ul><li><strong>debugImplementation</strong></li></ul> <blockquote><p>只在 debug 模式的编译和最终的 debug apk 打包时有效</p></blockquote> <ul><li><strong>releaseImplementation</strong></li></ul> <blockquote><p>仅仅针对 Release 模式的编译和最终的 Release apk 打包。</p></blockquote> <p>排除引用</p> <p>有时候为了解决引入的冲突，需要在引入远端包的同时排除这些包的某几个依赖</p> <div class="language- extra-class"><pre class="language-text"><code>dependencies {
+    implementation ('com.github.bumptech.glide:glide:4.9.0'){
+        exclude group:'com.android.support', module: 'support-fragment'
+        exclude group:'com.android.support', module: 'support-core-ui'
+        exclude group:'com.android.support', module: 'support-compat'
+        exclude group:'com.android.support', module: 'support-annotations'
+    }
+}
+</code></pre></div><h2 id="网络"><a href="#网络" class="header-anchor">#</a> 网络</h2> <h3 id="okhttp"><a href="#okhttp" class="header-anchor">#</a> OkHttp</h3> <div class="language-groovy extra-class"><pre class="language-groovy"><code><span class="token function">implementation</span><span class="token punctuation">(</span><span class="token string gstring">&quot;com.squareup.okhttp3:okhttp:4.9.3&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="retrofit"><a href="#retrofit" class="header-anchor">#</a> Retrofit</h3> <div class="language-groovy extra-class"><pre class="language-groovy"><code><span class="token keyword">def</span> retrofit_version <span class="token operator">=</span> <span class="token string gstring">&quot;2.9.0&quot;</span>
+    implementation <span class="token string gstring">&quot;com.squareup.retrofit2:retrofit:<span class="token expression"><span class="token punctuation">$</span>retrofit_version</span>&quot;</span>
+    <span class="token function">implementation</span><span class="token punctuation">(</span><span class="token string gstring">&quot;com.squareup.retrofit2:converter-gson:<span class="token expression"><span class="token punctuation">$</span>retrofit_version</span>&quot;</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/StudyRecord/guide/android/AndroidView.html" class="prev">
+        Android常用控件
+      </a></span> <span class="next"><a href="/StudyRecord/guide/android/AndroidOpenRes.html">
+        Android 开源项目
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/StudyRecord/assets/js/app.c1a100e1.js" defer></script><script src="/StudyRecord/assets/js/2.711b5d2d.js" defer></script><script src="/StudyRecord/assets/js/10.b83bebe1.js" defer></script>
+  </body>
+</html>
