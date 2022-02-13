@@ -3,6 +3,7 @@ const NavBar = require("./config/navbar/navbar")
 module.exports = {
     title: '空指针灬异常',
     description: '学习之路',
+    base: '/StudyRecord/',
     themeConfig: {
         // head: [['link', { rel: 'icon', href: '/imgs/headIcon.png' }]],
         // logo: '/img/logo.png',
