@@ -1,5 +1,4 @@
 module.exports = [
-
     {
         text: 'Android',
         ariaLabel: 'Android Menu',
@@ -21,6 +20,4 @@ module.exports = [
             {text: 'Yarn', link: '/guide/vue/Yarn.md'},
         ]
     },
-
-
 ]
