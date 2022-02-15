@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Android常用控件</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="踩坑之路">
+    
+    <link rel="preload" href="/StudyRecord/assets/css/0.styles.f8b596a9.css" as="style"><link rel="preload" href="/StudyRecord/assets/js/app.9fe21fb7.js" as="script"><link rel="preload" href="/StudyRecord/assets/js/2.711b5d2d.js" as="script"><link rel="preload" href="/StudyRecord/assets/js/9.0259aab8.js" as="script"><link rel="prefetch" href="/StudyRecord/assets/js/10.b83bebe1.js"><link rel="prefetch" href="/StudyRecord/assets/js/11.512f05a2.js"><link rel="prefetch" href="/StudyRecord/assets/js/12.94471144.js"><link rel="prefetch" href="/StudyRecord/assets/js/13.b9ed5b42.js"><link rel="prefetch" href="/StudyRecord/assets/js/14.fbefe1ec.js"><link rel="prefetch" href="/StudyRecord/assets/js/15.af1daab4.js"><link rel="prefetch" href="/StudyRecord/assets/js/16.577c7a81.js"><link rel="prefetch" href="/StudyRecord/assets/js/17.17e4b2f4.js"><link rel="prefetch" href="/StudyRecord/assets/js/3.546ba140.js"><link rel="prefetch" href="/StudyRecord/assets/js/4.b7d0708f.js"><link rel="prefetch" href="/StudyRecord/assets/js/5.9e2f4ca7.js"><link rel="prefetch" href="/StudyRecord/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/StudyRecord/assets/js/7.f39602d3.js"><link rel="prefetch" href="/StudyRecord/assets/js/8.1e324f54.js">
+    <link rel="stylesheet" href="/StudyRecord/assets/css/0.styles.f8b596a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/StudyRecord/" class="home-link router-link-active"><img src="/StudyRecord/imgs/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android Menu" class="dropdown-title"><span class="title">Android</span> <span class="arrow down"></span></button> <button type="button" aria-label="Android Menu" class="mobile-dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/" class="nav-link router-link-active">
+  Jetpack
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidView.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Android常用控件
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/Dependency.html" class="nav-link">
+  Android常用依赖
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="nav-link">
+  Android开源库
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/ErrorCollection.html" class="nav-link">
+  Android错误收集
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/network.html" class="nav-link">
+  Android Network
+</a></li></ul></div></div><div class="nav-item"><a href="/StudyRecord/guide/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/VuePress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/Yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div> <a href="https://github.com/GaoYingjie1995/StudyRecord" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Android Menu" class="dropdown-title"><span class="title">Android</span> <span class="arrow down"></span></button> <button type="button" aria-label="Android Menu" class="mobile-dropdown-title"><span class="title">Android</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/" class="nav-link router-link-active">
+  Jetpack
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidView.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Android常用控件
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/Dependency.html" class="nav-link">
+  Android常用依赖
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="nav-link">
+  Android开源库
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/ErrorCollection.html" class="nav-link">
+  Android错误收集
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/android/network.html" class="nav-link">
+  Android Network
+</a></li></ul></div></div><div class="nav-item"><a href="/StudyRecord/guide/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/VuePress.html" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/StudyRecord/guide/vue/Yarn.html" class="nav-link">
+  Yarn
+</a></li></ul></div></div> <a href="https://github.com/GaoYingjie1995/StudyRecord" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Android</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/StudyRecord/guide/android/" aria-current="page" class="sidebar-link">JetPack</a></li><li><a href="/StudyRecord/guide/android/AndroidView.html" aria-current="page" class="active sidebar-link">Android常用控件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/StudyRecord/guide/android/AndroidView.html#recyclerview" class="sidebar-link">Recyclerview</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/StudyRecord/guide/android/AndroidView.html#基础使用" class="sidebar-link">基础使用</a></li></ul></li></ul></li><li><a href="/StudyRecord/guide/android/Dependency.html" class="sidebar-link">Android 常用依赖</a></li><li><a href="/StudyRecord/guide/android/AndroidOpenRes.html" class="sidebar-link">Android 开源项目</a></li><li><a href="/StudyRecord/guide/android/ErrorCollection.html" class="sidebar-link">Android 异常收集</a></li><li><a href="/StudyRecord/guide/android/network.html" class="sidebar-link">Android 网络库</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="android常用控件"><a href="#android常用控件" class="header-anchor">#</a> Android常用控件</h1> <h2 id="recyclerview"><a href="#recyclerview" class="header-anchor">#</a> Recyclerview</h2> <h3 id="基础使用"><a href="#基础使用" class="header-anchor">#</a> 基础使用</h3> <ol><li><p>自定义Adapter继承Recyclerview.Adapter</p> <div class="language-kotlin extra-class"><pre class="language-kotlin"><code><span class="token keyword">class</span> <span class="token function">FuncListAdapter</span><span class="token punctuation">(</span><span class="token keyword">private</span> <span class="token keyword">val</span> funcList<span class="token operator">:</span>MutableList<span class="token operator">&lt;</span>FuncBean<span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token operator">:</span> RecyclerView<span class="token punctuation">.</span>Adapter<span class="token operator">&lt;</span> FuncListAdapter<span class="token punctuation">.</span>ViewHolder<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">lateinit</span> <span class="token keyword">var</span> clickListener<span class="token operator">:</span> <span class="token punctuation">(</span>position<span class="token operator">:</span> Int<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> Unit
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">onCreateViewHolder</span><span class="token punctuation">(</span>parent<span class="token operator">:</span> ViewGroup<span class="token punctuation">,</span> viewType<span class="token operator">:</span> Int<span class="token punctuation">)</span><span class="token operator">:</span> FuncListAdapter<span class="token punctuation">.</span><span class="token function">ViewHolder</span> <span class="token punctuation">{</span>
+        <span class="token keyword">val</span> view <span class="token operator">=</span> LayoutInflater<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>parent<span class="token punctuation">.</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>item_func_list<span class="token punctuation">,</span>parent<span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">ViewHolder</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">onBindViewHolder</span><span class="token punctuation">(</span>holder<span class="token operator">:</span> FuncListAdapter<span class="token punctuation">.</span>ViewHolder<span class="token punctuation">,</span> position<span class="token operator">:</span> Int<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        holder<span class="token punctuation">.</span>textView<span class="token punctuation">.</span>text <span class="token operator">=</span> funcList<span class="token punctuation">[</span>position<span class="token punctuation">]</span><span class="token punctuation">.</span>funcName<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">getItemCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> funcList<span class="token punctuation">.</span>size<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">inner</span> <span class="token keyword">class</span> <span class="token function">ViewHolder</span><span class="token punctuation">(</span>view<span class="token operator">:</span> View<span class="token punctuation">)</span> <span class="token operator">:</span> RecyclerView<span class="token punctuation">.</span><span class="token function">ViewHolder</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">val</span> textView<span class="token operator">:</span> TextView
+
+        <span class="token keyword">init</span> <span class="token punctuation">{</span>
+            textView <span class="token operator">=</span> view<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>tv_func_name<span class="token punctuation">)</span>
+            textView<span class="token punctuation">.</span><span class="token function">setOnClickListener</span> <span class="token punctuation">{</span>
+                <span class="token function">clickListener</span><span class="token punctuation">(</span>adapterPosition<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">fun</span> <span class="token function">setOnItemClick</span><span class="token punctuation">(</span>clickListener<span class="token operator">:</span><span class="token punctuation">(</span>position<span class="token operator">:</span>Int<span class="token punctuation">)</span><span class="token operator">-&gt;</span>Unit<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>clickListener <span class="token operator">=</span> clickListener
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li><p>将自定义adapter设置给recyclerview</p></li> <li><p>设置recyclerview的layoutManager</p> <div class="language-kotlin extra-class"><pre class="language-kotlin"><code>mVBinding<span class="token punctuation">.</span>rvFunc<span class="token punctuation">.</span>layoutManager <span class="token operator">=</span> <span class="token function">LinearLayoutManager</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span>LinearLayoutManager<span class="token punctuation">.</span>VERTICAL<span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+</code></pre></div></li></ol></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/StudyRecord/guide/android/" class="prev router-link-active">
+        JetPack
+      </a></span> <span class="next"><a href="/StudyRecord/guide/android/Dependency.html">
+        Android 常用依赖
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/StudyRecord/assets/js/app.9fe21fb7.js" defer></script><script src="/StudyRecord/assets/js/2.711b5d2d.js" defer></script><script src="/StudyRecord/assets/js/9.0259aab8.js" defer></script>
+  </body>
+</html>
